@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "dbfe4eac-1984-44e3-afb8-3df80487d44a",
+		"name": "journal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37166430"
+	},
+	"item": [
+		{
+			"name": "create-journal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"color\":\"red\",\r\n    \"description\":\"description----\",\r\n    \"category\":\"Gratitudes\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/profile/create-journal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"profile",
+						"create-journal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-journal",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"journalId\":\"665eb4b121d1dd831728d0a5\",\r\n    \"color\":\"orange\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/profile/update-journal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"profile",
+						"update-journal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-journal",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"journalId\":\"665eb4b121d1dd831728d0a5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000//user/profile/delete-journal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"",
+						"user",
+						"profile",
+						"delete-journal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "journal-list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/user/profile/journal-list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"profile",
+						"journal-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search-by-id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user/profile/search-by-id/:journalid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"profile",
+						"search-by-id",
+						":journalid"
+					],
+					"variable": [
+						{
+							"key": "journalid",
+							"value": "66bb5953d932f0e939caf59e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search-journal",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/profile/search-journal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"profile",
+						"search-journal"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
